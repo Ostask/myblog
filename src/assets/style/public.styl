@@ -1,0 +1,51 @@
+@import "~@/assets/style/colorSet.styl"
+.content{
+  overflow :hidden;
+  position:absolute;
+  background :$bodyCl;
+  top:50px;
+  left:0;
+  right:0;
+  bottom:0;
+
+}
+.main-title{
+  font-size:24px;
+  color:$bgColor;
+  font-weight:bold;
+  padding-left:10px;
+  margin-bottom:10px;
+  border-left:8px solid $bgColor;
+  a {
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 40px;
+    color: $bgColor;
+  }
+}
+.page-content-scroll{
+  height:100%;
+  width:100%;
+}
+.el-scrollbar__wrap {
+  overflow-x:hidden;
+}
+.el-select-dropdown__wrap.el-scrollbar__wrap {
+   overflow-x:scroll!important;
+ }
+
+.el-pager li {
+  background-color: transparent!important;
+}
+
+.el-pagination .btn-prev {
+  background-color: transparent!important;
+}
+
+.el-pagination .btn-next {
+  background-color: transparent!important;
+}
+
+
+

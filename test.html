@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>test</title>
+  <style>
+    .father{
+      width:100px;
+      height:50px;
+      margin-top:100px;
+      perspective: 800px;
+      position: relative;
+      transform-style: preserve-3d;perspective-origin:50% 50%;
+      transform-origin: 50% 50%;
+
+    }
+    .divUp{
+      width:100px;
+      height:50px;
+      background:#2d374b;
+      color:#fff;
+      position: absolute;
+      transform-origin: 50% 0%;
+      transition: all .5s;
+      top:0;
+      left:0;
+    }
+    .divDown{
+      width:100px;
+      height:50px;
+      background: #4b8e4d;
+      color:#fff;
+      position: absolute;
+      bottom:0;
+      left:0;
+      transform:rotateX(-90deg)translateY(50px);
+      transform-origin: 50% 100%;
+      transition: all .5s;
+    }
+
+    .father:hover .divDown{
+      transform:rotateX(0deg);
+    }
+    .father:hover .divUp{
+      transform:rotateX(90deg)translateY(-50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="divUp">1</div>
+    <div class="divDown">1</div>
+  </div>
+</body>
+</html>
